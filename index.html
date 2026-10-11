@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🌧️ Cozy Rainy Room</title>
+    <meta name="description" content="A fully interactive 3D room with rain outside, study table, laptop watermark, and interactive elements.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="scene"></canvas>
+
+    <div id="actionContainer" class="action-container">
+        <button id="actionBtn" class="action-btn"></button>
+    </div>
+
+    <div class="dpad-container">
+        <button class="dpad-btn up" id="btnUp">▲</button>
+        <div class="dpad-middle">
+            <button class="dpad-btn left" id="btnLeft">◀</button>
+            <button class="dpad-btn down" id="btnDown">▼</button>
+            <button class="dpad-btn right" id="btnRight">▶</button>
+        </div>
+    </div>
+
+    <div class="instructions" id="instructions">
+        <p>Drag to look around 🔄</p>
+        <p>Use WASD / Arrows or screen buttons to move 🚶‍♂️</p>
+    </div>
+
+    <div class="vignette"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
